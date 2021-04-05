@@ -9,7 +9,7 @@ import { Expandable } from "../src/components/expandable.js"
 
 This sample application adds one extension to the `applications.json` extension array, a **[Modify On Send](./extension-points#modify-on-send)** extension. You can use this extension to present the user with a UI as well as (optionally) modify the message before it is sent.
 
-View this extension's source \*\*[here](https://https://github.com/ibmverse/verse-developer/tree/master/src/modify-on-send/with-ui).
+View this extension's source \*\*[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/with-ui).
 
 ### Add the Extension
 
@@ -72,7 +72,7 @@ Since this is an embedded extension, the extension will not be automatically ter
 
 This sample application adds one extension to the `applications.json` extension array, a **[Modify On Send](./extension-points#modify-on-send)** extension. You can use this extension to modify a message before it is sent, without presenting a UI to the end user..
 
-View this extension's source **[here](https://https://github.com/ibmverse/verse-developer/tree/master/src/modify-on-send/no-ui)**.
+View this extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/no-ui)**.
 
 ### Add the Extension
 

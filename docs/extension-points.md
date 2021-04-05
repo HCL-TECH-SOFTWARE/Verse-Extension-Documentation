@@ -625,7 +625,7 @@ The modify on send extension is not leveraged when offline. If a modify on send 
 }
 ```
 
-For this complete extension, see **[this example](https://github.com/ibmverse/verse-developer/tree/master/src/modify-on-send/with-ui)**.
+For this complete extension, see **[this example](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/with-ui)**.
 
 In this example, when a user sends a mail message, this extension will be rendered over the mail compose UI. Once the extension has loaded, the user will see and interact with the extension's UI. The extension can then modify the message (optional) before allowing the send operation to complete. The extension will only be able to modify the subject by appending a classfication to the subject. If the extension tries to modify the subject in some other way, Verse will ignore the modification and will not send the email.
 
@@ -723,7 +723,7 @@ Some examples of **valid modified** versions of the original subject `Some subje
 }
 ```
 
-For this complete extension, see **[this example](https://github.com/ibmverse/verse-developer/tree/master/src/modify-on-send/no-ui)**.
+For this complete extension, see **[this example](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/no-ui)**.
 
 In this example, when a user sends a mail message, this extension will be rendered in a hidden iFrame. Once the extension has loaded, the extension can then modify the message (optional) before allowing the send operation to complete.
 
