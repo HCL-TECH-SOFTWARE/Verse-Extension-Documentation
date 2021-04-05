@@ -12,7 +12,7 @@ The Verse Extension API is heavily influenced by the Chrome/Firefox Web Extensio
 ## Prerequisites
 
 There are a few things you will need to get started:  
-1. Google Chrome
+1. Google Chrome or Firefox (Version 49.0 or greater)
 2. Your custom application or a local copy of the Verse Developer Extension Demo **[source code](https://git.cwp.pnp-hcl.com/IBM-Verse/verse-developer-chrome-ext/tree/master)**.
 3. contentscript.js and page.js from **[here](https://git.cwp.pnp-hcl.com/IBM-Verse/verse-developer-chrome-ext/tree/master/src)** *(Only if you are using your custom application)*
 
