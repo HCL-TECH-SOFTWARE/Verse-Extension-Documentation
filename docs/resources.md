@@ -19,4 +19,4 @@ title: Resources
 
 ### Repositories
 
-- **[Samples](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples)** _(Download)_
+- **[Samples](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/archive/refs/heads/master.zip)** _(Download)_

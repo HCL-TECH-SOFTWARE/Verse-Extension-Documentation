@@ -25,7 +25,7 @@ For example, to send the name of a user from a business card extension to your a
 "https://<your-domain-here>/extension.html?username=<profile.name>"
 ```
 
-The `profile.name` property is a variable that contains the user’s name. The valid data parameters are described in the **[Context Objects](#context-objects)** section. 
+The `profile.name` property is a variable that contains the user’s name. The valid data parameters are described in the **[Context Objects](#context-data-objects)** section. 
 
 Your application is responsible for retrieving the URL query parameter with the desired data.
 

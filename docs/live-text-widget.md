@@ -61,4 +61,4 @@ Reference the offical **[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/
 
 Additionally, you can add more than one `Live Text` widget extension to an application. In the event that more than one `recognizer` matches the same string of text in the `Mail Read` view, there will be an action for each match in the dropdown action tray.
 
-Please reference the **[Extension Point](./extension-points#live-text)** documentation for more information on the Live Text widget extension.
+Please reference the **[Live Text Extension Point](./extension-points#live-text)** documentation for more information on the Live Text widget extension.
