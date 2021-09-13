@@ -19,5 +19,4 @@ title: Resources
 
 ### Repositories
 
-- **[Sample Code Directory](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/no-ui)** _(Download)_
-- **[Documentation Source Code](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-Documentation)**
+- **[Samples](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples)** _(Download)_

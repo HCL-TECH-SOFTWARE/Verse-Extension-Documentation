@@ -7,7 +7,7 @@ import { Expandable } from "../src/components/expandable.js"
 This sample application adds demonstrates how to integrate a **[Third-Party File Repository](./extension-points#third-party-file-repository)** in the `Mail Compose` view of HCL Verse.
 
 ## What you will need
-Download the Third Party File Repo Integration demo from **[here](https://github.com/ibmverse/third-party-file-repo-integration)** and follow the setup instructions.
+Download the Third Party File Repo Integration demo from **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/third-party-file-repository-integration)** and follow the setup instructions.
 
 ## Add the Extension
 
