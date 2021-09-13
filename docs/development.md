@@ -7,14 +7,14 @@ import { Expandable } from "../src/components/expandable.js"
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The Verse Extension API is heavily influenced by the Chrome/Firefox Web Extension API. This is used to emulate *deploying* an application without needing to acutally deploy with Domino which streamlines development and testing. If you don't have an application ready, please reference the **[Getting Started](https://git.cwp.pnp-hcl.com/IBM-Verse/verse-developer-chrome-ext/tree/master)** tutorial.
+The Verse Extension API is heavily influenced by the Chrome/Firefox Web Extension API. This is used to emulate *deploying* an application without needing to acutally deploy with Domino which streamlines development and testing.
 
 ## Prerequisites
 
 There are a few things you will need to get started:  
 1. Google Chrome or Firefox (Version 49.0 or greater)
-2. Your custom application or a local copy of the Verse Developer Extension Demo **[source code](https://git.cwp.pnp-hcl.com/IBM-Verse/verse-developer-chrome-ext/tree/master)**.
-3. contentscript.js and page.js from **[here](https://git.cwp.pnp-hcl.com/IBM-Verse/verse-developer-chrome-ext/tree/master/src)** *(Only if you are using your custom application)*
+2. Your custom application or a local copy of the Verse Developer Extension Demo **[source code](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples)**.
+3. contentscript.js and page.js from **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src)** *(Only if you are using your custom application)*
 
 ## Configuration
 

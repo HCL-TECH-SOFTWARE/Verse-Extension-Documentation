@@ -38,7 +38,7 @@ module.exports = {
   },
   title: 'Verse Developer',
   tagline: 'Customize and Extend HCL Verse',
-  url: 'https://doc.cwpcollaboration.com/',
+  url: 'https://opensource.hcltechsw.com/',
   baseUrl: '/verse-developer/',
   favicon: 'img/mail-192.png',
   organizationName: 'HCL',

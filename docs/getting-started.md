@@ -5,7 +5,7 @@ title: Getting Started
 
 The following tutorials and exampes are here to give you a better understanding of the functionality that Verse Extensibility has to offer. 
 
-You can download the example directory ahead of time **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/archive/master.zip)**
+You can download the example directory ahead of time **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/tutorial-resources)**
 
 **Things to Note:**  
 - Notice that `${extensionPath}` is used at the base URL for all sample web applications in the examples. Follow the **[Development Docs](./development)** to gain a better understanding around how this string template will be replaced with a fully-qualified URL when the application is loaded into the broswer.
