@@ -39,7 +39,7 @@ module.exports = {
   title: 'Verse Developer',
   tagline: 'Customize and Extend HCL Verse',
   url: 'https://opensource.hcltechsw.com/',
-  baseUrl: '/verse-developer/',
+  baseUrl: '/Verse-Extension-Documentation/',
   favicon: 'img/mail-192.png',
   organizationName: 'HCL',
   projectName: 'verse-developer',
