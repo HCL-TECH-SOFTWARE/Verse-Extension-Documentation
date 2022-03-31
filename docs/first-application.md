@@ -162,5 +162,5 @@ You should notice how different data is available depending on the location of t
 }
 ```
 :::tip
-Check out the different **[data objects](./extension-data-api#context-data-objects)** supported in HCL Verse.
+Check out the different **[data objects](https://opensource.hcltechsw.com/Verse-Extension-Documentation/docs/extension-data-api/#context-data-objects)** supported in HCL Verse.
 :::
