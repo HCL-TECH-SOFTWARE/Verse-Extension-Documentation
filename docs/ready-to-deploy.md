@@ -10,5 +10,5 @@ Before deploying your application to Domino you may want to, first, test it loca
 Otherwise, you are ready to deploy your Verse application(s) for production use. The **[Domino Server Deployment](./domino-server-deployment)** docs will have your applications running for all Verse users in no time!
 
 :::note
-*In either case, be sure to follow the **[Secure Deployment Practices](./best-security-practices)** documentation to mitigate any potential vulnerabilities your application may have introduced.*
+*In either case, be sure to follow the **[Secure Deployment Practices](https://opensource.hcltechsw.com/Verse-Extension-Documentation/docs/best-security-practices/)** documentation to mitigate any potential vulnerabilities your application may have introduced.*
 :::
