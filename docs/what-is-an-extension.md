@@ -6,8 +6,8 @@ title: What is a Verse Extension?
 * `{string}` **name** the name of your extension
 * `{string}` **description** a description of what the extension does
 * `{string}` **type** the extension point for the target extension (**[List of Extension Points](../extension-points)**)  
-* `{string}` **path** a link to a specific location in the Verse UI (**[Supported Paths](./paths-and-objects#paths)**)  
-* `{string}` **object** another way to link to a specific location in the Verse UI (**[Supported Objects](./paths-and-objects#objects)**)  
+* `{string}` **path** a link to a specific location in the Verse UI (**[Supported Paths](../paths-and-objects#paths)**)  
+* `{string}` **object** another way to link to a specific location in the Verse UI (**[Supported Objects](../paths-and-objects#objects)**)  
 * `{object}` **payload** a JSON object that contains the supported attributes of the target extension (Ex. url, icon, text, etc.). 
 
 **General Extension Example:**  
@@ -31,8 +31,8 @@ title: What is a Verse Extension?
 ......
 ```
 
-## [Paths and Objects](./paths-and-objects)
-Paths and objects allows extension points to alter behavior and UI at specific locations within the container. Defined **paths** and **objects** offer a way for extensions to target specific locations within the Verse UI. **[List of supported paths and objests](./paths-and-objects)**
+## [Paths and Objects](../paths-and-objects)
+Paths and objects allows extension points to alter behavior and UI at specific locations within the container. Defined **paths** and **objects** offer a way for extensions to target specific locations within the Verse UI. **[List of supported paths and objests](../paths-and-objects)**
 
 ## [Extension Points](../extension-points)
 Extension Points define the type of extension being contributed and each extension point has a set of required attributes. Take a look at the **[full list of extension points](../extension-points)** that HCL Verse has to offer.

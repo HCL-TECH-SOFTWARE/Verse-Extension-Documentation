@@ -119,8 +119,8 @@ Widget Actions are the UI components that will be added to Verse. They cannot be
 > **Required:**  
 * `{string}` **id** A unique id for the action
 * `{string}` **text** The text used in the Verse UI
-* `{string}` **path** The **[path](./paths-and-objects#paths)** identifies where the action is contributed
-* `{string}` **object** The **[object](./paths-and-objects#objects)** identifies where the action is contributed
+* `{string}` **path** The **[path](../paths-and-objects#paths)** identifies where the action is contributed
+* `{string}` **object** The **[object](../paths-and-objects#objects)** identifies where the action is contributed
 
 :::note
 An action must contain either a **path** OR an **object** property.

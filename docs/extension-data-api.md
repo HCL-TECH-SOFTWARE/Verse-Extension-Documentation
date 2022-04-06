@@ -3,7 +3,7 @@ id: extension-data-api
 title: Extension Data API
 ---
 :::caution
-Adding extensions that use the Verse Data API can make Verse less secure. Follow the **[Secure Deployment Practices](best-security-practices)** guidelines before deploying your application to mitigate any vulnerabilities that may have been introduced.
+Adding extensions that use the Verse Data API can make Verse less secure. Follow the **[Secure Deployment Practices](../best-security-practices)** guidelines before deploying your application to mitigate any vulnerabilities that may have been introduced.
 :::
 
 ## Overview

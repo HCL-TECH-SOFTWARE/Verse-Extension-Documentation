@@ -4,7 +4,7 @@ title: Your First Application
 ---
 import { Expandable } from "../src/components/expandable.js"
 
-This section will walk you through writing your first HCL Verse extensibility application. You will learn how to add functionality to the Verse `Business Card`, `Mail Compose` and `Mail Read` views. Additionally, this application will demonstrate how your web application can recieve the different Verse data context types. After you have the configured `applications.json`, it is recommended to load the sample application by following the **[Development docs](./development)** to view your application running in Verse.
+This section will walk you through writing your first HCL Verse extensibility application. You will learn how to add functionality to the Verse `Business Card`, `Mail Compose` and `Mail Read` views. Additionally, this application will demonstrate how your web application can recieve the different Verse data context types. After you have the configured `applications.json`, it is recommended to load the sample application by following the **[Development docs](../development)** to view your application running in Verse.
 
 
 ## Configure the `applications.json`
@@ -27,7 +27,7 @@ An application serves as the container to your extensions and you can add one or
 | name        | `string` | the name of the application (must be unique) |
 | title       | `string` | the title of your application |
 | description | `string` | a description of what the application should do |
-| extensions  | `Array<Extension>` | an array of extension definitions ([What is an Extension?](./what-is-an-extension))|
+| extensions  | `Array<Extension>` | an array of extension definitions ([What is an Extension?](../what-is-an-extension))|
 | services    | `Array<String>`| an array of services the extension is deployed to. **All HCL Verse extensions should include "Verse" as a supported service** |
 
 ## Add the Extension
@@ -69,7 +69,7 @@ This sample application adds one extension to the `applications.json` extension 
 | actions     | `Array<WidgetAction>` | an array of [Custom Widget Actions](../extension-points#widget-actions) |
 
 :::tip
-Notice that `${extensionPath}` is used as the base URL to `samples/actions.html`. Follow the **[Development docs](./development)** to gain a better understanding around how this string template will be replaced with a fully-qualified URL when the application is loaded into the broswer. Extensions that use external code to render a widget will need to host the resources from a web server.
+Notice that `${extensionPath}` is used as the base URL to `samples/actions.html`. Follow the **[Development docs](../development)** to gain a better understanding around how this string template will be replaced with a fully-qualified URL when the application is loaded into the broswer. Extensions that use external code to render a widget will need to host the resources from a web server.
 :::
 
 ## Add the Widget Actions
@@ -129,8 +129,8 @@ The `Custom Widget` extension `actions` array accepts one or more **[Widget Acti
 | Property    | Type |  Definition |
 |-------------|:----:|-------------|
 | id           | `string` | a unique id |
-| path         | `string` | location in Verse to add the action to ([List of Paths](./paths-and-objects#paths)) |
-| object       | `string` | another way to specify location in Verse to add action to ([List of Objects](./paths-and-objects#paths)) |
+| path         | `string` | location in Verse to add the action to ([List of Paths](../paths-and-objects#paths)) |
+| object       | `string` | another way to specify location in Verse to add action to ([List of Objects](../paths-and-objects#paths)) |
 | text         | `string` | Text used to display the new link in the Verse UI |
 | title        | `string` | *optional* title of action, will be used as display text if `text` is not specified |
 | location     | `string` | where the web application should open (**window|tab|embedded**) |

@@ -6,10 +6,10 @@ title: FAQ
 ### How do I load my application in Verse?
 
 #### For Testing & Development
-It can be useful to test your application locally before deploying for production use. The **[Deploying for Development](./development)** docs will help you get started.
+It can be useful to test your application locally before deploying for production use. The **[Deploying for Development](../development)** docs will help you get started.
 
 #### Deploy for Production
-If your application is ready for production use then, use the **[Domino Server Deployment](./domino-server-deployment)** documentation to deploy.
+If your application is ready for production use then, use the **[Domino Server Deployment](../domino-server-deployment)** documentation to deploy.
 
 ### Why won't my application load?
 
