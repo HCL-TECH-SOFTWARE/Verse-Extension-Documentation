@@ -43,6 +43,7 @@ module.exports = {
   favicon: 'img/mail-192.png',
   organizationName: 'HCL',
   projectName: 'verse-developer',
+  trailingSlash: true,
   presets: [
     [
       '@docusaurus/preset-classic',
