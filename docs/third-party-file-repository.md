@@ -4,7 +4,7 @@ title: Third Party File Repository
 ---
 import { Expandable } from "../src/components/expandable.js"
 
-This sample application adds demonstrates how to integrate a **[Third-Party File Repository](./extension-points#third-party-file-repository)** in the `Mail Compose` view of HCL Verse.
+This sample application adds demonstrates how to integrate a **[Third-Party File Repository](../extension-points#third-party-file-repository)** in the `Mail Compose` view of HCL Verse.
 
 ## What you will need
 Download the Third Party File Repo Integration demo from **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/third-party-file-repository-integration)** and follow the setup instructions.
@@ -41,7 +41,7 @@ Download the Third Party File Repo Integration demo from **[here](https://github
 #### Extension Properties
 | Property    | Type |  Definition |
 |-------------|:----:|-------------|
-| type        | `string` | the extension point  ([List of Extension Points](./extension-points)) |
+| type        | `string` | the extension point  ([List of Extension Points](../extension-points)) |
 | name        | `string` | the name of the application |
 | payload     | `object` | JSON object that specifies properties specific to the extension |
 | text        | `string` | the display text of the link in the UI |
@@ -65,4 +65,4 @@ var msg = {
 ```
 Where `links` is an array of objects each with a `url` and `name` property. The open web application will close when the message is posted due to the `closeWindow: true` property.
 
-Be sure to read through the code in the third party file repository linked to at the top of this page and the **[Third-Party File Repository](./extension-points#third-party-file-repository)** extension documentation to learn more.
+Be sure to read through the code in the third party file repository linked to at the top of this page and the **[Third-Party File Repository](../extension-points#third-party-file-repository)** extension documentation to learn more.

@@ -31,7 +31,7 @@ An application serves as the container to your extensions and you can add one or
 | services    | `Array<String>`| an array of services the extension is deployed to. **All HCL Verse extensions should include "Verse" as a supported service** |
 
 ## Add the Extension
-This sample application adds one extension to the `applications.json` extension array, a **[Custom Widget](./extension-points#custom-widget)** extension. Custom Widget extensions take widget actions, which define your desired changes.
+This sample application adds one extension to the `applications.json` extension array, a **[Custom Widget](../extension-points#custom-widget)** extension. Custom Widget extensions take widget actions, which define your desired changes.
 
 ```js
 [
@@ -62,18 +62,18 @@ This sample application adds one extension to the `applications.json` extension 
 | Property    | Type |  Definition |
 |-------------|:----:|-------------|
 | name        | `string` | the name of the application |
-| type        | `string` | the extension point  ([List of Extension Points](./extension-points)) |
+| type        | `string` | the extension point  ([List of Extension Points](../extension-points)) |
 | payload     | `object` | JSON object that specifies properties specific to the extension |
 | url         | `string` | The fully-qualified URL of where your application is being served from |
-| features    | `Array<String>` | an array of features to enable. Adding `core` enables the [Verse Data API](./extension-data-api) |
-| actions     | `Array<WidgetAction>` | an array of [Custom Widget Actions](./extension-points#widget-actions) |
+| features    | `Array<String>` | an array of features to enable. Adding `core` enables the [Verse Data API](../extension-data-api) |
+| actions     | `Array<WidgetAction>` | an array of [Custom Widget Actions](../extension-points#widget-actions) |
 
 :::tip
 Notice that `${extensionPath}` is used as the base URL to `samples/actions.html`. Follow the **[Development docs](./development)** to gain a better understanding around how this string template will be replaced with a fully-qualified URL when the application is loaded into the broswer. Extensions that use external code to render a widget will need to host the resources from a web server.
 :::
 
 ## Add the Widget Actions
-The `Custom Widget` extension `actions` array accepts one or more **[Widget Actions](./extension-points#widget-actions)**, which are responsible for defining the changes you want to contribute to Verse. Three widget actions are added in this sample application: `person`, `mail compose`, and `mail read`. Each action adds a link to its respective location in the Verse UI that opens to `actions.html`.
+The `Custom Widget` extension `actions` array accepts one or more **[Widget Actions](../extension-points#widget-actions)**, which are responsible for defining the changes you want to contribute to Verse. Three widget actions are added in this sample application: `person`, `mail compose`, and `mail read`. Each action adds a link to its respective location in the Verse UI that opens to `actions.html`.
 ```js
 [
   {

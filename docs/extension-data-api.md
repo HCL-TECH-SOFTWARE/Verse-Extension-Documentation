@@ -55,7 +55,7 @@ window.addEventListener('message', function(evt) {
 }, false);
 ```
 :::note
-Extensions that use cross-document messaging must add the `features` property with the value `["core"]` to enable communication with Verse. Take a look at an example **[widget extension](extension-points#widget)** with this feature.
+Extensions that use cross-document messaging must add the `features` property with the value `["core"]` to enable communication with Verse. Take a look at an example **[widget extension](../extension-points#widget)** with this feature.
 :::
 
 ### Parsing the Data
@@ -81,7 +81,7 @@ There are three context objects: `Mail Compose`, `Mail Read`, and `Person`.
 A context object with mail compose data is passed to actions placed in the Mail Compose view (`mail.compose`).
 
 :::note
-Note that `recipientBcc` and `attachments` properties are only available when they are enabled in permissions property of a **[Widget Action](extension-points#widget-actions)** or **[BeforeOnSend](extension-points#beforeonsend)** definition.
+Note that `recipientBcc` and `attachments` properties are only available when they are enabled in permissions property of a **[Widget Action](../extension-points#widget-actions)** or **[BeforeOnSend](../extension-points#beforeonsend)** definition.
 :::
 
 #### Example Mail Compose Data
@@ -125,7 +125,7 @@ Note that `recipientBcc` and `attachments` properties are only available when th
 A context object with mail read data is passed to actions placed in the Mail Read view (`mail.read`).
 
 :::note
-Note that `recipientBcc` and `attachments` properties are only available when they are enabled in permissions property of a **[Widget Action](extension-points#widget-actions)** definition.
+Note that `recipientBcc` and `attachments` properties are only available when they are enabled in permissions property of a **[Widget Action](../extension-points#widget-actions)** definition.
 :::
 
 #### Example Mail Read Data

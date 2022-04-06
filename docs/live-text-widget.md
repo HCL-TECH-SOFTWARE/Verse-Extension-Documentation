@@ -4,7 +4,7 @@ title: Live Text Widget
 ---
 import { Expandable } from "../src/components/expandable.js"
 
-This sample application demonstrates the **[Live Text](./extension-points#live-text)** widget extension which adds new functionality to text in the body of the `Mail Read` view.
+This sample application demonstrates the **[Live Text](../extension-points#live-text)** widget extension which adds new functionality to text in the body of the `Mail Read` view.
 
 ## Add the Extension
 
@@ -40,7 +40,7 @@ This sample application demonstrates the **[Live Text](./extension-points#live-t
 | Property    | Type |  Definition |
 |-------------|:----:|-------------|
 | name        | `string` | the name of the application |
-| type        | `string` | the extension point  ([List of Extension Points](./extension-points)) |
+| type        | `string` | the extension point  ([List of Extension Points](../extension-points)) |
 | title       | `string` | title of your extension |
 | href        | `string` | a fully qualified URL |
 | recognizer  | `string` | a JavaScript regular expression |
@@ -61,4 +61,4 @@ Reference the offical **[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/
 
 Additionally, you can add more than one `Live Text` widget extension to an application. In the event that more than one `recognizer` matches the same string of text in the `Mail Read` view, there will be an action for each match in the dropdown action tray.
 
-Please reference the **[Live Text Extension Point](./extension-points#live-text)** documentation for more information on the Live Text widget extension.
+Please reference the **[Live Text Extension Point](../extension-points#live-text)** documentation for more information on the Live Text widget extension.
