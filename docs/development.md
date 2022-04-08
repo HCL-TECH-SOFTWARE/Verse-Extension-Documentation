@@ -122,5 +122,5 @@ After following one of the above methods, reload Verse to test your new applicat
 *If you deployed your own custom application then look in the Verse UI for your own changes*. The demo application is a Widget extension type that adds a new action to a dropdown menu in the Mail Compose View and an action to back of the Verse people business card. Clicking on the application opens the specified HTML file that is served via the local web server. This widget, also, leverages the **Verse Data API** to receive useful Verse information in the browser (Ex. a business card action extension sends the person’s name, email, phone, etc.).
 
 :::info
-To learn more about the different types of extensions that Verse has to offer head over the the **[Extension Documentation](./what-is-an-extension)**.
+To learn more about the different types of extensions that Verse has to offer head over the the **[Extension Documentation](../what-is-an-extension)**.
 :::

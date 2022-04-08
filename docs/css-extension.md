@@ -4,7 +4,7 @@ title: CSS Extension
 ---
 import { Expandable } from "../src/components/expandable.js"
 
-In this tutorial you will learn how to use the **[Custom CSS](./extension-points#css-support)** extension type. 
+In this tutorial you will learn how to use the **[Custom CSS](../extension-points#css-support)** extension type. 
 
 ## Add the Extension
 
@@ -34,7 +34,7 @@ In this tutorial you will learn how to use the **[Custom CSS](./extension-points
 | Property    | Type |  Definition |
 |-------------|:----:|-------------|
 | name        | `string` | the name of the extension |
-| type        | `string` | the extension point  ([List of Extension Points](./extension-points)) |
+| type        | `string` | the extension point  ([List of Extension Points](../extension-points)) |
 | payload     | `object` | JSON object that specifies properties specific to the extension |
 | css         | `string` | CSS styles in string format |
 
@@ -42,6 +42,6 @@ In this tutorial you will learn how to use the **[Custom CSS](./extension-points
 <Expandable path="samples/custom-css.gif" />
 
 ##  How it Works
-The **[Custom CSS](./extension-points#css-support)** extension can be used to override default styles and add custom styles to the HCL Verse UI. Valid CSS is read in as a string from the `css` attribute and applied to the page, injected as a stylesheet with the `id` attribute and specified styles.
+The **[Custom CSS](../extension-points#css-support)** extension can be used to override default styles and add custom styles to the HCL Verse UI. Valid CSS is read in as a string from the `css` attribute and applied to the page, injected as a stylesheet with the `id` attribute and specified styles.
 
-Be diligent when adding CSS to the extension, styles may not load if there are syntax errors. For more information, reference the **[Custom CSS](./extension-points#css-support)** extension docs.
+Be diligent when adding CSS to the extension, styles may not load if there are syntax errors. For more information, reference the **[Custom CSS](../extension-points#css-support)** extension docs.

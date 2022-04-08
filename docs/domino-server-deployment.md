@@ -2,7 +2,7 @@
 id: domino-server-deployment
 title: Domino Server Deployment
 ---
-If you do not have a deployment ready application, you should take a look at the **[example applications](./getting-started)** for reference or the **[extension docs](./what-is-an-extension)** to start your own.
+If you do not have a deployment ready application, you should take a look at the **[example applications](../getting-started)** for reference or the **[extension docs](../what-is-an-extension)** to start your own.
 ## Your Application
 All applications should be stored in a file `applications.json` with the following structure:
 
@@ -27,7 +27,7 @@ All applications should be stored in a file `applications.json` with the followi
 | name        | the name of the application (must be unique) |
 | title       | the title of your application |
 | description | a description of what the application should do |
-| extensions  | an array of extension definitions ([What is an Extension?](./what-is-an-extension))|
+| extensions  | an array of extension definitions ([What is an Extension?](../what-is-an-extension))|
 | services    | an array of services the extension is deployed to. **All HCL Verse extensions should include "Verse" as a supported service** |
 
 Production ready, HCL Verse applications should be deployed to Domino. There are two different methods of deployment:  
@@ -50,7 +50,7 @@ Alternatively, the applications JSON can be served via an HTTP server. Steps to 
 3. Specify the **HTTP URL** to the applications JSON with the notes.ini parameter: `VOP_Extensibility_Applications_Json_URL=https://example.com/vop/applications.json`
 
 ## When to use the custom endpoint
-Sometimes it might be useful to dynamically serve applications using code. If that is the case, then you will need to implement and use a custom endpoint. It is important to note that the endpoint response format must match, exactly, that of the [HCL Connections Appregistry API](./domino-server-deployment#example-response-data). Otherwise, Verse may be unable to parse the information. Steps to deploy:
+Sometimes it might be useful to dynamically serve applications using code. If that is the case, then you will need to implement and use a custom endpoint. It is important to note that the endpoint response format must match, exactly, that of the [HCL Connections Appregistry API](../domino-server-deployment#example-response-data). Otherwise, Verse may be unable to parse the information. Steps to deploy:
 
 1. Configure custom endpoint should serve the response data
 2. Specify the **URL** of the custom endpoint with the notes.ini parameter: `VOP_Extensibility_Endpoint_URL=https://rest.example.com/vop/appregistry/services/Verse/applications`

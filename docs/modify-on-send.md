@@ -7,7 +7,7 @@ import { Expandable } from "../src/components/expandable.js"
 
 ## With an User Interface
 
-This sample application adds one extension to the `applications.json` extension array, a **[Modify On Send](./extension-points#modify-on-send)** extension. You can use this extension to present the user with a UI as well as (optionally) modify the message before it is sent.
+This sample application adds one extension to the `applications.json` extension array, a **[Modify On Send](../extension-points#modify-on-send)** extension. You can use this extension to present the user with a UI as well as (optionally) modify the message before it is sent.
 
 View this extension's source \*\*[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/with-ui).
 
@@ -42,7 +42,7 @@ View this extension's source \*\*[here](https://github.com/HCL-TECH-SOFTWARE/Ver
 | Property |   Type   |                              Definition                              |
 | :------: | :------: | :------------------------------------------------------------------: |
 |   name   | `string` |                      The name of the extension                       |
-|   type   | `string` | The extension point ([List of Extension Points](./extension-points)) |
+|   type   | `string` | The extension point ([List of Extension Points](../extension-points)) |
 |  title   | `string` |                      The title of the extension                      |
 | location | `string` |       embedded - Indicates that the extension will render a UI       |
 | pattern  | `string` |  A regex to limit what subject modifications the extension can make  |
@@ -54,9 +54,9 @@ View this extension's source \*\*[here](https://github.com/HCL-TECH-SOFTWARE/Ver
 
 ### How it Works
 
-This **[Modify On Send](./extension-points#modify-on-send)** extension example prompts the user to add a classificiation to the subject of each email being sent. Additionally, this extension appends a signature to the end of the message body. This can be useful to inject a disclaimer at the end of each message being sent.
+This **[Modify On Send](../extension-points#modify-on-send)** extension example prompts the user to add a classificiation to the subject of each email being sent. Additionally, this extension appends a signature to the end of the message body. This can be useful to inject a disclaimer at the end of each message being sent.
 
-The extension leverages the **[Mail Compose data api](./extension-data-api#mail-compose)**, Thus, the sample web application has access to the mail's data context. The script, `modify-on-send/with-ui/script.js`, handles the cross-document messaging _handshake_ to let Verse know that the extension is ready to receive data. When the sample web application receives a message event with the `verseApiType` of `com.ibm.verse.message.modify.mail` the data context is there as well. As always, it is good practice to confirm the `actionId` to ensure the data you recieve is coming from the correct action; the `actionId` is `com.ibm.verse.ext.action.modifyOnSend`.
+The extension leverages the **[Mail Compose data api](../extension-data-api#mail-compose)**, Thus, the sample web application has access to the mail's data context. The script, `modify-on-send/with-ui/script.js`, handles the cross-document messaging _handshake_ to let Verse know that the extension is ready to receive data. When the sample web application receives a message event with the `verseApiType` of `com.ibm.verse.message.modify.mail` the data context is there as well. As always, it is good practice to confirm the `actionId` to ensure the data you recieve is coming from the correct action; the `actionId` is `com.ibm.verse.ext.action.modifyOnSend`.
 
 For this tutorial, the user is presented with a simple UI that allows the user to pick from a list of classifications, or the user can choose to skip classifying the message. Once the user picks a selection, the selected classification is appended to the beginning of the original subject.
 
@@ -70,7 +70,7 @@ Since this is an embedded extension, the extension will not be automatically ter
 
 ## Without an User Interface
 
-This sample application adds one extension to the `applications.json` extension array, a **[Modify On Send](./extension-points#modify-on-send)** extension. You can use this extension to modify a message before it is sent, without presenting a UI to the end user..
+This sample application adds one extension to the `applications.json` extension array, a **[Modify On Send](../extension-points#modify-on-send)** extension. You can use this extension to modify a message before it is sent, without presenting a UI to the end user..
 
 View this extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/no-ui)**.
 
@@ -103,7 +103,7 @@ View this extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse
 | Property |   Type   |                              Definition                              |
 | :------: | :------: | :------------------------------------------------------------------: |
 |   name   | `string` |                      The name of the extension                       |
-|   type   | `string` | The extension point ([List of Extension Points](./extension-points)) |
+|   type   | `string` | The extension point ([List of Extension Points](../extension-points)) |
 |  title   | `string` |                      The title of the extension                      |
 |   url    | `string` |             The fully-qualified URL of your application              |
 
@@ -113,9 +113,9 @@ View this extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse
 
 ### How it Works
 
-This **[Modify On Send](./extension-points#modify-on-send)** extension example modifies the subject of each email being sent without presenting any UI to the end user. Additionally, this extension appends a signature to the end of the message body. This can be useful to inject a disclaimer at the end of each message being sent.
+This **[Modify On Send](../extension-points#modify-on-send)** extension example modifies the subject of each email being sent without presenting any UI to the end user. Additionally, this extension appends a signature to the end of the message body. This can be useful to inject a disclaimer at the end of each message being sent.
 
-The extension leverages the **[Mail Compose data api](./extension-data-api#mail-compose)**. Thus, the sample web application has access to the mail's data context. The script, `modify-on-send/with-ui/script.js`, handles the cross-document messaging _handshake_ to let Verse know that the extension is ready to receive data. When the sample web application receives a message event with the `verseApiType` of `com.ibm.verse.message.modify.mail` the data context is there as well. As always, it is good practice to confirm the `actionId` to ensure the data you recieve is coming from the correct action; the `actionId` is `com.ibm.verse.ext.action.modifyOnSend`.
+The extension leverages the **[Mail Compose data api](../extension-data-api#mail-compose)**. Thus, the sample web application has access to the mail's data context. The script, `modify-on-send/with-ui/script.js`, handles the cross-document messaging _handshake_ to let Verse know that the extension is ready to receive data. When the sample web application receives a message event with the `verseApiType` of `com.ibm.verse.message.modify.mail` the data context is there as well. As always, it is good practice to confirm the `actionId` to ensure the data you recieve is coming from the correct action; the `actionId` is `com.ibm.verse.ext.action.modifyOnSend`.
 
 For this tutorial, the extension will ignore messages being sent with the string `"MODIFYONSEND"` in the subject. If the subject does not contain `"MODIFYONSEND"`, then the extension will modify the subject of the message to prepend `"[MODIFIED SUBJECT] "` to the original subject.
 

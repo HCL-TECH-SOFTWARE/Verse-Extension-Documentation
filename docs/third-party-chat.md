@@ -5,7 +5,7 @@ title: Third Party Chat
 
 import { Expandable } from "../src/components/expandable.js"
 
-This sample demonstrates how to use the **[Disable Sametime](./extension-points#disable-sametime)** extension in conjunction with the **[Templated Link](./extension-points#templated-link)** extension to integrate third party chat and meeting services in Verse.
+This sample demonstrates how to use the **[Disable Sametime](../extension-points#disable-sametime)** extension in conjunction with the **[Templated Link](../extension-points#templated-link)** extension to integrate third party chat and meeting services in Verse.
 
 ## Add the Disable Sametime Extension
 
@@ -99,7 +99,7 @@ This sample demonstrates how to use the **[Disable Sametime](./extension-points#
 #### Extension Properties
 | Property    | Type |  Definition |
 |-------------|:----:|-------------|
-| type        | `string` | the extension point  ([List of Extension Points](./extension-points)) |
+| type        | `string` | the extension point  ([List of Extension Points](../extension-points)) |
 | object      | `string` | a target within the Verse UI |
 | payload     | `object` | JSON object that specifies properties specific to the extension |
 | text        | `string` | the display text of the link in the UI |
@@ -115,4 +115,4 @@ This example application uses a combination of extensions to customize the chat 
 
 Additionally, there are two Templated Widget extensions; one to replace the Sametime Chat action and the other for the Sametime Meeting action, distinguished by the `locator` property. As can be seen in the demo above, the Sametime Chat and Meeting Icons are infact the ones specified in the extensions. Clicking on the new **chat** icon will open to the sample `chat-service.html` web application and the new meeting will open to the specified URL.
 
-The templated link extension for the meeting action leverages the extension's `template variable` to add a user's email as a query parameter. Query parameters are an easy way to pass data through a URL. Take a look at the **[Templated Link](./extension-points#templated-link)** extension documentation for more information.
+The templated link extension for the meeting action leverages the extension's `template variable` to add a user's email as a query parameter. Query parameters are an easy way to pass data through a URL. Take a look at the **[Templated Link](../extension-points#templated-link)** extension documentation for more information.

@@ -5,7 +5,7 @@ title: Directory Search Extension
 import { Expandable } from "../src/components/expandable.js"
 
 ## Add the Extension
-This example demonstrates how to use the **[Directory Search](./extension-points#directory-search)** extension to add new users to your default HCL Verse search directory.
+This example demonstrates how to use the **[Directory Search](../extension-points#directory-search)** extension to add new users to your default HCL Verse search directory.
 
 ```js
 [
@@ -29,7 +29,7 @@ This example demonstrates how to use the **[Directory Search](./extension-points
 #### Extension Properties
 | Property    | Type |  Definition |
 |-------------|:----:|-------------|
-| type        | `string` | the extension point  ([List of Extension Points](./extension-points)) |
+| type        | `string` | the extension point  ([List of Extension Points](../extension-points)) |
 | payload     | `object` | JSON object that specifies properties specific to the extension |
 | url         | `string` | The fully-qualified URL of where your application is being served from |
 | enableBuiltinDirectorySearch | `Boolean` | controls whether the built-in directory search in Verse is also used |
@@ -57,4 +57,4 @@ displayName: // Name to be displayed. Optional
 forwardMailAddress: // Forward mail address. Optional
 ```
 
-Take a look inside the `script.js` file in the `custom-directory-search` folder to get a better understanding of how the sample web application sends and receives data. Additionally, reference the **[Directory Search](./extension-points#directory-search)** extension documentation for more information.
+Take a look inside the `script.js` file in the `custom-directory-search` folder to get a better understanding of how the sample web application sends and receives data. Additionally, reference the **[Directory Search](../extension-points#directory-search)** extension documentation for more information.
