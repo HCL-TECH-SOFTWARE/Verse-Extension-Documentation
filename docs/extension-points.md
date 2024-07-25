@@ -582,10 +582,11 @@ If Verse directory search will timeout if it does not receive the results within
 
 The Modify On Send extension is a specific Widget extension defined to allow third-party logic to modify a mail when it is being sent. The extension can optionally display a UI. For example, a UI may be helpful to ask the user for their input before modifying the message.
 
-There are a couple of different types of message modifications that can be performed on send:
+There are a few different types of message modifications that can be performed on send:
 
 - Modify the subject of the email
 - Append "signature" contents to the end of the message body
+- Modify the body of the email (new in HCL Verse 3.2.2. requires the Domino administrator to enable this modification using [notes.ini](https://help.hcltechsw.com/verse_onprem/3.2/admin/enabling_advanced_modify_on_send_extension.html).)
 
 #### Properties
 
@@ -788,6 +789,7 @@ After the extension receives the `mail.compose` context object, it can return mo
 * `{object}` **modifiedContext** An object containing the modified context object data that should be used by Verse to modify the original message before sending.
   * `{string}` **subject** The modified subject to use. Optional
   * `{string}` **signature** The contents to append to the end of the original message's body contents. Optional
+  * `{string}` **body** The new contents to use for the message's body. Optional (new in HCL Verse 3.2.2. requires the Domino administrator to enable this modification using [notes.ini](https://help.hcltechsw.com/verse_onprem/3.2/admin/enabling_advanced_modify_on_send_extension.html).)
 
 #### Example Response
 ```js
@@ -795,7 +797,8 @@ After the extension receives the `mail.compose` context object, it can return mo
   verseApiType: "com.ibm.verse.message.modify.mail",
   modifiedContext: {
     subject: "The subject of this message has been modified",
-    signature: "This email and any attached files are confidential and intended soley for the use of the individual(s) to whom they are addressed."
+    signature: "This email and any attached files are confidential and intended soley for the use of the individual(s) to whom they are addressed.",
+	body: `My Disclaimer: ${context.body}`
   }
 }
 ```
