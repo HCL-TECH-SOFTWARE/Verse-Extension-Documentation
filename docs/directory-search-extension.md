@@ -4,8 +4,12 @@ title: Directory Search Extension
 ---
 import { Expandable } from "../src/components/expandable.js"
 
-## Add the Extension
 This example demonstrates how to use the **[Directory Search](../extension-points#directory-search)** extension to add new users to your default HCL Verse search directory.
+
+## Add the Extension
+As described in **[Loading an Application for Development](../development)**, you should make these changes in the ```applications.json``` file located in the ```src``` directory of the downloaded Verse Developer Extension Demo source code. 
+
+Note: you can view the extension's source [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/custom-directory-search) along with a copy of the complete applications.json file.
 
 ```js
 [

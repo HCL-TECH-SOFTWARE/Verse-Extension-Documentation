@@ -9,31 +9,33 @@ import { Expandable } from "../src/components/expandable.js"
 
 This sample application adds one extension to the `applications.json` extension array, a **[Modify On Send](../extension-points#modify-on-send)** extension. You can use this extension to present the user with a UI as well as (optionally) modify the message before it is sent.
 
-View this extension's source \*\*[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/with-ui).
-
 ### Add the Extension
+As described in **[Loading an Application for Development](../development)**, you should make these changes in the ```applications.json``` file located in the ```src``` directory of the downloaded Verse Developer Extension Demo source code. 
+
+Note: you can view the extension's source [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/with-ui) along with a copy of the complete applications.json file.
 
 ```js
 [
   {
-    name: "ModifyOnSend",
-    title: "ModifyOnSend",
-    description:
-      "This sample demonstrates using the ModifyOnSend extension point",
-    extensions: [
+    "name": "ModifyOnSend",
+    "title": "ModifyOnSend",
+    "description": "This sample demonstrates using the ModifyOnSend extension point",
+    "extensions": [
       {
-        name: "Modify on Send",
-        type: "com.ibm.verse.ext.modifyOnSend",
-        title: "Modify the contents of mail",
-        payload: {
-          location: "embedded",
-          pattern: "\\[(PROTECTED|PRIVATE|CLASSIFIED|SECRET)\\](\\s*)",
-          url: "${extensionPath}/modify-on-send/with-ui/index.html",
-        },
-      },
+        "name": "Modify on Send",
+        "type": "com.ibm.verse.ext.modifyOnSend",
+        "title": "Modify the contents of mail",
+        "payload": {
+          "location": "embedded",
+          "pattern": "\\[(PROTECTED|PRIVATE|CLASSIFIED|SECRET)\\](\\s+|)",
+          "url": "${extensionPath}/modify-on-send/with-ui/index.html"
+        }
+      }
     ],
-    services: ["Verse"],
-  },
+    "services": [
+      "Verse"
+    ]
+  }
 ];
 ```
 
@@ -75,26 +77,30 @@ This sample application adds one extension to the `applications.json` extension 
 View this extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/no-ui)**.
 
 ### Add the Extension
+As described in **[Loading an Application for Development](../development)**, you should make these changes in the ```applications.json``` file located in the ```src``` directory of the downloaded Verse Developer Extension Demo source code. 
+
+Note: you can view the extension's source [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/no-ui) along with a copy of the complete applications.json file.
 
 ```js
 [
   {
-    name: "ModifyOnSend",
-    title: "ModifyOnSend",
-    description:
-      "This sample demonstrates using the ModifyOnSend extension point",
-    extensions: [
+    "name": "ModifyOnSend",
+    "title": "ModifyOnSend",
+    "description": "This sample demonstrates using the ModifyOnSend extension point",
+    "extensions": [
       {
-        name: "Modify on Send",
-        type: "com.ibm.verse.ext.modifyOnSend",
-        title: "Modify the contents of mail",
-        payload: {
-          url: "${extensionPath}/modify-on-send/no-ui/index.html",
-        },
-      },
+        "name": "Modify on Send",
+        "type": "com.ibm.verse.ext.modifyOnSend",
+        "title": "Modify the contents of mail",
+        "payload": {
+          "url": "${extensionPath}/modify-on-send/no-ui/index.html"
+        }
+      }
     ],
-    services: ["Verse"],
-  },
+    "services": [
+      "Verse"
+    ]
+  }
 ];
 ```
 

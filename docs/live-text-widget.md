@@ -7,6 +7,9 @@ import { Expandable } from "../src/components/expandable.js"
 This sample application demonstrates the **[Live Text](../extension-points#live-text)** widget extension which adds new functionality to text in the body of the `Mail Read` view.
 
 ## Add the Extension
+As described in **[Loading an Application for Development](../development)**, you should make these changes in the ```applications.json``` file located in the ```src``` directory of the downloaded Verse Developer Extension Demo source code. 
+
+Note: you can view the extension's source [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/live-text) along with a copy of the complete applications.json file.
 
 ```js
 [
@@ -59,6 +62,6 @@ A unique feature of the `Live Text` extension is the ability to add the matching
 Reference the offical **[MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)** for more information on Javascript's String `match` property.
 :::
 
-Additionally, you can add more than one `Live Text` widget extension to an application. In the event that more than one `recognizer` matches the same string of text in the `Mail Read` view, there will be an action for each match in the dropdown action tray.
+Additionally, you can add more than one `Live Text` widget extension to an application. In the event that more than one `recognizer` matches the same string of text in the `Mail Read` view, there will be an action for each match in the dropdown action tray. Please reference the provided sample for multiple Live Text actions [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/modify-on-send/live-text/multiple-actions).
 
 Please reference the **[Live Text Extension Point](../extension-points#live-text)** documentation for more information on the Live Text widget extension.
