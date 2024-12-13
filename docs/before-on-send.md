@@ -9,7 +9,7 @@ This sample application adds one extension to the `applications.json` extension 
 ## Add the Extension
 As described in **[Loading an Application for Development](../development)**, you should make these changes in the ```applications.json``` file located in the ```src``` directory of the downloaded Verse Developer Extension Demo source code. 
 
-Note: you can view the extension's source [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/hook-before-send) along with a copy of the complete applications.json file.
+Note: you can view the extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/hook-before-send)** along with a copy of the complete applications.json file.
 
 ```js
 [
@@ -52,4 +52,4 @@ The extension also leverages the `VerseDataAPI` thus, the sample web application
 
 For this tutorial, the `body` attribute of the `verseDataAPI` is used to search for a *credit card-like* string inside the body of the email. If no matches are found, a message is sent back to Verse with the `verseApiType`, `com.ibm.verse.message.continue.send`. Otherwise, the `index.html` page is displayed as an embedded frame within the `Mail Compose` view with an appropriate warning message. The user has the option to revise the email or can bypass the warning and send the email anyways. 
 
-There is the option to disable sending completely by setting `disableSend: true` in the `payload`. Please reference the **[BeforeOnSend](../extension-points#beforeonsend)** extension documentation for more information Please reference the provided sample that implements `disableSend: true` [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/hook-before-send-disable).
+There is the option to disable sending completely by setting `disableSend: true` in the `payload`. Please reference the **[BeforeOnSend](../extension-points#beforeonsend)** extension documentation for more information Please reference the provided sample that implements `disableSend: true` **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/hook-before-send-disable)**.

@@ -9,7 +9,7 @@ In this tutorial you will learn how to use the **[Name Picker](../extension-poin
 ## Add the Extension
 As described in **[Loading an Application for Development](../development)**, you should make these changes in the ```applications.json``` file located in the ```src``` directory of the downloaded Verse Developer Extension Demo source code. 
 
-Note: you can view the extension's source [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/custom-name-picker) along with a copy of the complete applications.json file.
+Note: you can view the extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/custom-name-picker)** along with a copy of the complete applications.json file.
 
 ```js
 [

@@ -7,7 +7,7 @@ import { Expandable } from "../src/components/expandable.js"
 This sample application adds demonstrates how to integrate a **[Third-Party File Repository](../extension-points#third-party-file-repository)** in the `Mail Compose` view of HCL Verse.
 
 ## What you will need to do
-Set up the sample file repository and extension by following the instructions **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/blob/master/src/third-party-file-repo/README.md).
+Set up the sample file repository and extension by following the instructions **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/blob/master/src/third-party-file-repo/README.md)**.
 
 ##  How it Works
 The `Third Party File Repository` extension adds the new icon to the action toolbar in the `Mail Compose` view. In this example, the selected action will open the web applcation in a new window of the specified width and height.

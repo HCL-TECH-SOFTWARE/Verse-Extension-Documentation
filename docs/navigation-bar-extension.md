@@ -9,7 +9,7 @@ This sample application demonstrates how to use the , **[Navbar Delete](../exten
 ## Add the Navbar Delete Extension
 As described in **[Loading an Application for Development](../development)**, you should make these changes in the ```applications.json``` file located in the ```src``` directory of the downloaded Verse Developer Extension Demo source code. 
 
-Note: you can view the extension's source [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/navigation-bar-customization/branding) along with a copy of the complete applications.json file.
+Note: you can view the extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/navigation-bar-customization/branding)** along with a copy of the complete applications.json file.
 
 ```js
 [
@@ -110,4 +110,4 @@ A combination of the Navbar Extensions are used to rebrand the default HCL Verse
 
 For more information on the default ordering of the HCL Verse navbar please reference the **[Navbar Extension](../extension-points#navbar-extension-points)** documentation.
 
-For additional navigation bar extension samples, go [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/navigation-bar-customization/add-delete-link) and [here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/navigation-bar-customization/cascading-menu).
+For additional navigation bar extension samples, go **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/navigation-bar-customization/add-delete-link)** and **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/navigation-bar-customization/cascading-menu)**.

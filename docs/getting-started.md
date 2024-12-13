@@ -7,7 +7,7 @@ The following tutorials and exampes are here to give you a better understanding 
 
 Download the samples source code from **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master)**
 
-Most of the samples in these tutorials require additional resources that are in the Verse Developer Extension Demo [source code](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master). In order to install and test the samples, follow the instructions in the **[Loading an Application for Development](../development)**. 
+Most of the samples in these tutorials require additional resources that are in the Verse Developer Extension Demo **[source code](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master)**. In order to install and test the samples, follow the instructions in the **[Loading an Application for Development](../development)**. 
 
 For each extension's `Add the Extension` section, edit the applications.json file in the `src` directory next to manifest.json.
 
