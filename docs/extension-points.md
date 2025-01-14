@@ -47,6 +47,8 @@ The Templated Link extension is similar to Simple Link and adds a clickable URL 
 
 To add a template variable to the URL, the text should be added in the following format: **${property}**. When the link is selected by a user, the variable(s) will be replaced with the corresponding value, passed with respect to the `path`/`object`. For example, a templated link placed on the back of the Person Business card will have a different data context than a templated link inside of the Mail Compose View.  
 
+If the desired behavior can be invoked using a protocol handler, a templated link can provide object fields through the protocol handler shema. For info on protocol handlers see **[protocol_handlers](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json/protocol_handlers#protocol).  
+
 :::info
 For more in depth information on the different data contexts take a look at the Verse **[Extension Data API](../extension-data-api)** docs.
 :::
