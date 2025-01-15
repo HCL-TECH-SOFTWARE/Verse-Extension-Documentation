@@ -96,7 +96,7 @@ When deploying for production use, your resources will need to be hosted via a w
 :::
 
 ## Installation
-Now that the necessary files have been added and configured, you can load your extension into the browser using Chrome or Firefox. 
+Now that the necessary files have been added and configured, you can load your extension into the browser using Chrome or Firefox.
 
 ### Installing to Chrome (Latest)
 1. Navigate to ```chrome://extensions``` inside of Chrome
