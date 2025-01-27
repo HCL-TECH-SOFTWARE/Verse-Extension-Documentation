@@ -9,7 +9,7 @@ Download the samples source code from **[here](https://github.com/HCL-TECH-SOFTW
 
 Most of the samples in these tutorials require additional resources that are in the Verse Developer Extension Demo **[source code](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master)**. In order to install and test the samples, follow the instructions in the **[Loading an Application for Development](../development)**. 
 
-Each extension's documentation page has a `Add the Extension` section that discusses making changes to applications.json. For these steps, you should edit the applications.json file in the `src` directory next to manifest.json.
+Each extension's documentation page has an `Add the Extension` section that discusses making changes to applications.json. For these steps, you should edit the applications.json file in the `src` directory next to manifest.json.
 
 In the ```src/manifest.json``` file, configure the matches property to include your organization's domain. It may be useful to reference **[The Manifest](../development#the-manifest)** configuration section of the development docs.
 
