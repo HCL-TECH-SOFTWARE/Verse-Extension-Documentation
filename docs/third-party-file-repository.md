@@ -6,51 +6,8 @@ import { Expandable } from "../src/components/expandable.js"
 
 This sample application adds demonstrates how to integrate a **[Third-Party File Repository](../extension-points#third-party-file-repository)** in the `Mail Compose` view of HCL Verse.
 
-## What you will need
-Download the Third Party File Repo Integration demo from **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/third-party-file-repository-integration)** and follow the setup instructions.
-
-## Add the Extension
-
-```js
-[
-  {
-    "name": "Third-party file repository integration",
-    "title": "Third-party file repository integration",
-    "description": "Integrate third-party file repository in Verse",
-    "extensions": [
-      {
-        "type": "com.ibm.verse.ext.file",
-        "name": "Third-party file repository extension",
-        "payload": {
-          "text": "Third-Party File Repository",
-          "url": "https://<third-party-file-repo>.com",
-          "icon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOxAAADsQBlSsOGwAAAGpJREFUOE+1k4EKgDAIRC36b/3z6kLJFUpOejAYQ293si3MvFMREdHdCQQqoN73rKpTxlxMC4BLpBrBg95NxV74QQ1De/LFQVSD89YMQBgBmPUsQuoAjbYi/ovgb80ctN9BO0JbYOo73xAdbuoHJPh854UAAAAASUVORK5CYII=",
-          "renderParams": {
-            "width": "450",
-            "height": "230"
-          }
-        }
-      }
-    ],
-    "services": [
-      "Verse"
-    ]
-  }
-]
-```
-#### Extension Properties
-| Property    | Type |  Definition |
-|-------------|:----:|-------------|
-| type        | `string` | the extension point  ([List of Extension Points](../extension-points)) |
-| name        | `string` | the name of the application |
-| payload     | `object` | JSON object that specifies properties specific to the extension |
-| text        | `string` | the display text of the link in the UI |
-| icon        | `string` | a base64 encoded data uri |
-| url         | `string` | a fully-qualified URL |
-| renderParams | `object` | contains `width` and `height` properties  **only valid if the location’s value is window** |
-
-## Test it Out
-<Expandable path="samples/third_party_file_repository_integration.gif" />
+## What you will need to do
+Set up the sample file repository and extension by following the instructions **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/blob/master/src/third-party-file-repo/README.md)**.
 
 ##  How it Works
 The `Third Party File Repository` extension adds the new icon to the action toolbar in the `Mail Compose` view. In this example, the selected action will open the web applcation in a new window of the specified width and height.

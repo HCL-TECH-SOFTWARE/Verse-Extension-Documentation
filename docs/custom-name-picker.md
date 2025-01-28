@@ -7,6 +7,10 @@ import { Expandable } from "../src/components/expandable.js"
 In this tutorial you will learn how to use the **[Name Picker](../extension-points#alternative-name-picker)** extension type. 
 
 ## Add the Extension
+As described in **[Loading an Application for Development](../development)**, you should make these changes in the ```applications.json``` file located in the ```src``` directory of the downloaded Verse Developer Extension Demo source code. 
+
+Note: you can view the extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/custom-name-picker)** along with a copy of the complete applications.json file.
+
 ```js
 [
   {
@@ -17,6 +21,7 @@ In this tutorial you will learn how to use the **[Name Picker](../extension-poin
       {
         "type": "com.ibm.verse.ext.namePicker",
         "name": "Custom name picker in mail compose",
+        "title": "Add Contact",
         "payload": {
           "url": "${extensionPath}/custom-name-picker/index.html"
         }
@@ -32,8 +37,9 @@ In this tutorial you will learn how to use the **[Name Picker](../extension-poin
 #### Extension Properties
 | Property    | Type |  Definition |
 |-------------|:----:|-------------|
-| name        | `string` | the name of the extension |
 | type        | `string` | the extension point  ([List of Extension Points](../extension-points)) |
+| name        | `string` | the name of the extension |
+| title       | `string` | the label for the action as seen by the user |
 | payload     | `object` | JSON object that specifies properties specific to the extension |
 | url         | `string` | The fully-qualified URL of your application |
 

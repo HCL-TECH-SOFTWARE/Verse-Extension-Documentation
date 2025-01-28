@@ -4,11 +4,15 @@ title: Your First Application
 ---
 import { Expandable } from "../src/components/expandable.js"
 
-This section will walk you through writing your first HCL Verse extensibility application. You will learn how to add functionality to the Verse `Business Card`, `Mail Compose` and `Mail Read` views. Additionally, this application will demonstrate how your web application can recieve the different Verse data context types. After you have the configured `applications.json`, it is recommended to load the sample application by following the **[Development docs](../development)** to view your application running in Verse.
+This section will walk you through writing your first HCL Verse extensibility application. You will learn how to add functionality to the Verse `Business Card`, `Mail Compose` and `Mail Read` views. Additionally, this application will demonstrate how your web application can recieve the different Verse data context types. 
 
 
 ## Configure the `applications.json`
-An application serves as the container to your extensions and you can add one or more extensions to the `applications.json`. All applications should be stored in a file ```applications.json``` with the following structure:
+An application serves as the container to your extensions and you can add one or more extensions to the `applications.json`. All applications should be stored in a file ```applications.json``` with the structure defined below. 
+
+As described in **[Loading an Application for Development](../development)**, you should make these changes in the ```applications.json``` file located in the ```src``` directory of the downloaded Verse Developer Extension Demo source code. 
+
+Note: you can view the extension's source **[here](https://github.com/HCL-TECH-SOFTWARE/Verse-Extension-samples/tree/master/src/first-application)** along with a copy of the complete applications.json file.
 
 ```js
 [
@@ -69,7 +73,7 @@ This sample application adds one extension to the `applications.json` extension 
 | actions     | `Array<WidgetAction>` | an array of [Custom Widget Actions](../extension-points#widget-actions) |
 
 :::tip
-Notice that `${extensionPath}` is used as the base URL to `samples/actions.html`. Follow the **[Development docs](../development)** to gain a better understanding around how this string template will be replaced with a fully-qualified URL when the application is loaded into the broswer. Extensions that use external code to render a widget will need to host the resources from a web server.
+Notice that `${extensionPath}` is used as the base URL to `samples/actions.html`. Follow the **[Loading an Application for Development](../development)** to gain a better understanding around how this string template will be replaced with a fully-qualified URL when the application is loaded into the broswer. Extensions that use external code to render a widget will need to host the resources from a web server.
 :::
 
 ## Add the Widget Actions
@@ -145,7 +149,7 @@ As you can see in your own browser or from the demo above, clicking on an added 
 
 Each widget action has a `path` or an `object` and a `location`. The `path` and `object` attributes target an area in the Verse UI to add the action to. An path **OR** an object must be defined, but not both. The `location` attribute explains how the sample web application should open: in a new `window`, `tab`, or `embedded` frame. If the `location` is set to `window`, an additional property, `renderParams`, is supported to describe the **height** and **width** of the new window.
 
-You should notice how different data is available depending on the location of the Widget in the Verse UI. If you haven't already, open the `actions.html` and `actions.js` files and read through them. The sample application runs, `actions.js`, a script that listens for a `message` event from Verse. Since the extension specifies `core` in the `features` array, the event object contains an object called `data` that has the follow structure:
+You should notice how different data is available depending on the location of the Widget in the Verse UI. If you haven't already, open the `actions.html` and `actions.js` files and read through them. Each action in the sample application runs `actions.js`, a script that listens for a `message` event from Verse. Since the extension specifies `core` in the `features` array, the event object contains an object called `data` that has the follow structure:
 ```js
 
 {
