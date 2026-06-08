@@ -802,7 +802,7 @@ After the extension receives the `mail.compose` context object, it can return mo
   modifiedContext: {
     subject: "The subject of this message has been modified",
     signature: "This email and any attached files are confidential and intended soley for the use of the individual(s) to whom they are addressed.",
-	  body: `My Disclaimer: ${context.body}`,
+    body: `My Disclaimer: ${context.body}`,
     sendEncrypted: true
   }
 }
