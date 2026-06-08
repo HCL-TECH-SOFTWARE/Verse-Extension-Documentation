@@ -589,7 +589,7 @@ There are a several different types of message modifications that can be perform
 - Modify the subject of the email
 - Append "signature" contents to the end of the message body
 - Modify the body of the email (new in HCL Verse 3.2.2. requires the Domino administrator to enable this modification using [notes.ini](https://help.hcltechsw.com/verse_onprem/3.2/admin/enabling_advanced_modify_on_send_extension.html).)
-- Force the message to be sent as encrytped (new in HCL Verse 3.2.7)
+- Force the message to be sent as encrypted (new in HCL Verse 3.2.7)
 
 #### Properties
 
@@ -793,7 +793,7 @@ After the extension receives the `mail.compose` context object, it can return mo
   * `{string}` **subject** The modified subject to use. Optional
   * `{string}` **signature** The contents to append to the end of the original message's body contents. Optional
   * `{string}` **body** The new contents to use for the message's body. Optional (new in HCL Verse 3.2.2. requires the Domino administrator to enable this modification using [notes.ini](https://help.hcltechsw.com/verse_onprem/3.2/admin/enabling_advanced_modify_on_send_extension.html).)
-  * `{boolean}` **sendEncrypted** A boolean indicating if the message should be sent as an encryupted email. A value of true will force the email to be sent as encrytped. A value of false, will not change the encryption status of the outgoing message. This option was added in HCL Verse 3.2.7.
+  * `{boolean}` **sendEncrypted** A boolean indicating if the message should be sent as an encrypted email. A value of true will force the email to be sent as encrypted. A value of false, will not change the encryption status of the outgoing message. This option was added in HCL Verse 3.2.7.
 
 #### Example Response
 ```js
